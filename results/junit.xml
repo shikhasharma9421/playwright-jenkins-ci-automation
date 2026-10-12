@@ -1,0 +1,16 @@
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="21.615928">
+<testsuite name="cases.spec.ts" timestamp="2026-10-12T13:41:36.925Z" hostname="chromium" tests="6" failures="0" skipped="0" time="63.521" errors="0">
+<testcase name="SauceDemo - Login › TC01 valid user can login" classname="cases.spec.ts" time="10.455">
+</testcase>
+<testcase name="SauceDemo - Login › TC02 locked out user cannot login" classname="cases.spec.ts" time="10.425">
+</testcase>
+<testcase name="SauceDemo - Login › TC03 invalid username shows error" classname="cases.spec.ts" time="10.493">
+</testcase>
+<testcase name="SauceDemo - Login › TC04 invalid password shows error" classname="cases.spec.ts" time="10.374">
+</testcase>
+<testcase name="SauceDemo - Login › TC05 empty username and password shows error" classname="cases.spec.ts" time="10.437">
+</testcase>
+<testcase name="SauceDemo - Login › TC06 user can logout after login" classname="cases.spec.ts" time="11.337">
+</testcase>
+</testsuite>
+</testsuites>
