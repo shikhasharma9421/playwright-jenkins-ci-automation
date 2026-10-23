@@ -37,7 +37,7 @@ test.describe('SauceDemo - Login', () => {
     await loginPage.goto();
   });
 
-  test('TC01 valid user can login', async ({ page }) => {
+  test('TC01 valid user can login @smoke', async ({ page }) => {
     await loginPage.login('standard_user', PASSWORD);
     await expect(page).toHaveURL(/inventory\.html/);
     await expect(page.locator('[data-test="title"]')).toHaveText('Products');
