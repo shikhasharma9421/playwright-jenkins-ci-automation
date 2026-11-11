@@ -43,19 +43,19 @@ test.describe('SauceDemo - Login', () => {
     await expect(page.locator('[data-test="title"]')).toHaveText('Products');
   });
 
-  test('TC02 locked out user cannot login', async () => {
+  test('TC02 locked out user cannot login @smoke, @regression', async () => {
     await loginPage.login('locked_out_user', PASSWORD);
     await expect(loginPage.error).toContainText('Sorry, this user has been locked out.');
   });
 
-  test('TC03 invalid username shows error', async () => {
+  test('TC03 invalid username shows error @smoke, @regression', async () => {
     await loginPage.login('invalid_user', PASSWORD);
     await expect(loginPage.error).toContainText(
       'Username and password do not match any user in this service'
     );
   });
 
-  test('TC04 invalid password shows error', async () => {
+  test('TC04 invalid password shows error @smoke, @regression', async () => {
     await loginPage.login('standard_user', 'wrong_pass');
     await expect(loginPage.error).toContainText(
       'Username and password do not match any user in this service'
